@@ -15,19 +15,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Run Playwright Tests') {
             steps {
                 // Build and run docker-compose with env file
-                sh 'docker compose --env-file ${ENV_FILE} up --build --abort-on-container-exit'
+                bat 'docker compose --env-file ${ENV_FILE} up --build --abort-on-container-exit'
             }
             post {
                 always {
                     // Stop and clean up containers
-                    sh 'docker compose down'
+                    bat 'docker compose down'
                 }
             }
         }
