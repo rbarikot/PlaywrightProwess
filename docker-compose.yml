@@ -1,0 +1,16 @@
+services:
+  playwright-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: playwright-tests
+    env_file:
+      - ./env/.env    # <--- point to your env/.env file
+    volumes:
+      - ./:/work
+      - ./test-results:/work/test-results
+      - ./allure-results:/work/allure-results
+      - ./allure-report:/work/allure-report
+    working_dir: /work
+    shm_size: "2gb"
+    command: ["npx", "playwright", "test"]
