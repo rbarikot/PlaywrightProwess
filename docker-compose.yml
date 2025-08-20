@@ -13,4 +13,4 @@ services:
       - ./allure-report:/work/allure-report
     working_dir: /work
     shm_size: "2gb"
-    command: ["npx", "playwright", "test",--reporter=line,html]
+    command: ["npx", "playwright", "test"]
