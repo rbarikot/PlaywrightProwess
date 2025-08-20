@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // Path to your env file
         ENV_FILE = "env/.env"
     }
 
@@ -13,39 +12,20 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Build & Run in Docker') {
             steps {
-                bat 'npm install'
-            }
-        }
-
-        stage('Run Playwright Tests') {
-            steps {
-                // Build and run docker-compose with env file
-                bat 'docker compose --env-file ${ENV_FILE} up --build --abort-on-container-exit'
-            }
-            post {
-                always {
-                    // Stop and clean up containers
-                    bat 'docker compose down'
-                }
+                bat '''
+                    docker compose --env-file %ENV_FILE% up --build --abort-on-container-exit
+                    docker compose down
+                '''
             }
         }
 
         stage('Allure Report') {
             steps {
-                allure([
-                    includeProperties: false,
-                    jdk: '',
-                    results: [[path: 'allure-results']]
-                ])
+                bat 'npx allure generate allure-results --clean -o allure-report'
+                archiveArtifacts artifacts: 'allure-report/**', allowEmptyArchive: true
             }
-        }
-    }
-
-    post {
-        always {
-            archiveArtifacts artifacts: 'test-results/**/*.*', fingerprint: true
         }
     }
 }
