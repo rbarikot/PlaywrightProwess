@@ -11,6 +11,14 @@ pipeline {
                 checkout scm
             }
         }
+        stage('Clean old containers') {
+            steps {
+                bat """
+                docker rm -f playwright-tests || true
+                docker compose --env-file %ENV_FILE% down -v || true
+                """
+            }
+        }
 
         stage('Run Playwright Tests in Docker') {
             steps {
