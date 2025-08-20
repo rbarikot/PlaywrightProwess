@@ -1,0 +1,174 @@
+[2025-08-20 14:42:25.670] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:42:25.683] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Playwright.navigate): Cannot navigate to invalid URL
+Call log:
+[2m  - navigating to "undefined/login", waiting until "networkidle"[22m
+
+[2025-08-20 14:42:26.980] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:42:26.999] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+[2m  - navigating to "undefined/login", waiting until "networkidle"[22m
+
+[2025-08-20 14:42:28.458] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:42:28.484] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Page.navigate): Invalid url: "undefined/login"
+Call log:
+[2m  - navigating to "undefined/login", waiting until "networkidle"[22m
+
+[2025-08-20 14:44:05.854] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:44:05.870] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Playwright.navigate): Cannot navigate to invalid URL
+Call log:
+[2m  - navigating to "undefined/login", waiting until "load"[22m
+
+[2025-08-20 14:44:07.203] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:44:07.221] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+[2m  - navigating to "undefined/login", waiting until "load"[22m
+
+[2025-08-20 14:44:08.514] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:44:08.543] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Page.navigate): Invalid url: "undefined/login"
+Call log:
+[2m  - navigating to "undefined/login", waiting until "load"[22m
+
+[2025-08-20 14:46:26.664] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:46:26.680] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Playwright.navigate): Cannot navigate to invalid URL
+Call log:
+[2m  - navigating to "undefined/login", waiting until "load"[22m
+
+[2025-08-20 14:46:28.006] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:46:28.028] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+[2m  - navigating to "undefined/login", waiting until "load"[22m
+
+[2025-08-20 14:46:28.984] INFO: ACTION: NAVIGATE  url: undefined/login
+[2025-08-20 14:46:29.023] ERROR: Failed to navigate to undefined/login: page.goto: Protocol error (Page.navigate): Invalid url: "undefined/login"
+Call log:
+[2m  - navigating to "undefined/login", waiting until "load"[22m
+
+[2025-08-20 14:48:04.821] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:48:06.149] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:48:07.641] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:48:10.069] ERROR: Failed to navigate to http://10.119.32.127:8080/da/login: this.waitForPageToLoad is not a function
+[2025-08-20 14:48:11.457] ERROR: Failed to navigate to http://10.119.32.127:8080/da/login: this.waitForPageToLoad is not a function
+[2025-08-20 14:48:12.164] ERROR: Failed to navigate to http://10.119.32.127:8080/da/login: this.waitForPageToLoad is not a function
+[2025-08-20 14:49:00.650] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:49:01.995] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:49:03.440] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:49:50.937] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:49:51.308] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:49:54.100] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:51:13.334] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:51:13.418] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:51:14.923] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:51:19.725] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:51:19.725] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:51:19.835] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:51:19.835] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:51:19.863] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:51:19.864] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:51:21.177] ERROR: Failed to type in element //label[text()='Username']: locator.type: text: expected string, got object
+[2025-08-20 14:51:22.029] ERROR: Failed to type in element //label[text()='Username']: locator.type: text: expected string, got object
+[2025-08-20 14:51:22.783] ERROR: Failed to type in element //label[text()='Username']: locator.type: text: expected string, got object
+[2025-08-20 14:53:04.571] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:53:04.758] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:53:06.217] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:53:14.970] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:53:14.971] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:53:19.000] ERROR: Failed to type in element //label[text()='Username']: locator.fill: value: expected string, got object
+[2025-08-20 14:53:26.711] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:53:26.711] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:53:28.965] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:53:28.966] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:53:31.462] ERROR: Failed to type in element //label[text()='Username']: locator.fill: value: expected string, got object
+[2025-08-20 14:53:31.881] ERROR: Failed to type in element //label[text()='Username']: locator.fill: value: expected string, got object
+[2025-08-20 14:56:40.598] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:56:40.822] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:56:42.243] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:56:45.264] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:56:45.265] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:56:45.462] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:56:45.462] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:56:46.181] ERROR: Failed to type in element //label[text()='Username']: locator.fill: value: expected string, got object
+[2025-08-20 14:56:46.706] ERROR: Failed to type in element //label[text()='Username']: locator.fill: value: expected string, got object
+[2025-08-20 14:56:46.899] INFO: ACTION: TYPE //label[text()='Username'] text: "[object Object]", timeout: 30000ms
+[2025-08-20 14:56:46.900] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:56:48.350] ERROR: Failed to type in element //label[text()='Username']: locator.fill: value: expected string, got object
+[2025-08-20 14:59:02.570] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:59:02.748] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:59:04.188] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 14:59:07.272] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 14:59:07.272] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:59:08.141] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 14:59:08.142] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:59:09.533] INFO: STEP: Click User Profile 
+[2025-08-20 14:59:09.533] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 14:59:09.534] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:59:09.564] INFO: STEP: Click User Passowrd 
+[2025-08-20 14:59:11.368] INFO: STEP: Click User Profile 
+[2025-08-20 14:59:11.369] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 14:59:11.369] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:59:11.481] INFO: STEP: Click User Passowrd 
+[2025-08-20 14:59:13.427] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 14:59:13.428] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:59:15.928] INFO: STEP: Click User Profile 
+[2025-08-20 14:59:15.928] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 14:59:15.929] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 14:59:15.970] INFO: STEP: Click User Passowrd 
+[2025-08-20 15:01:54.615] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 15:01:54.801] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 15:01:56.320] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 15:02:00.507] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 15:02:00.508] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:02.006] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 15:02:02.008] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:02.708] INFO: STEP: Click User Profile 
+[2025-08-20 15:02:02.709] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 15:02:02.709] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:02.868] INFO: STEP: Click User Passowrd 
+[2025-08-20 15:02:02.869] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-08-20 15:02:02.870] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:04.404] INFO: STEP: Click Login 
+[2025-08-20 15:02:05.004] INFO: STEP: Click User Profile 
+[2025-08-20 15:02:05.006] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 15:02:05.006] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:05.063] INFO: STEP: Click User Passowrd 
+[2025-08-20 15:02:05.064] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-08-20 15:02:05.064] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:06.470] INFO: STEP: Click Login 
+[2025-08-20 15:02:13.566] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 15:02:13.568] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:16.812] INFO: STEP: Click User Profile 
+[2025-08-20 15:02:16.813] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 15:02:16.814] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:16.876] INFO: STEP: Click User Passowrd 
+[2025-08-20 15:02:16.878] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-08-20 15:02:16.878] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-08-20 15:02:20.744] INFO: STEP: Click Login 
+[2025-08-20 15:15:08.282] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 15:15:15.625] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 15:15:15.626] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 15:15:17.050] INFO: STEP: Click User Profile 
+[2025-08-20 15:15:17.050] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 15:15:17.050] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 15:15:17.086] INFO: STEP: Click User Passowrd 
+[2025-08-20 15:15:17.087] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-08-20 15:15:17.087] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-08-20 15:15:18.385] INFO: STEP: Click Login 
+[2025-08-20 22:08:07.625] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 22:08:14.212] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 22:08:14.213] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 22:08:15.192] INFO: STEP: Click User Profile 
+[2025-08-20 22:08:15.193] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 22:08:15.193] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 22:08:15.230] INFO: STEP: Click User Passowrd 
+[2025-08-20 22:08:15.230] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-08-20 22:08:15.231] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-08-20 22:08:16.223] INFO: STEP: Click Login 
+[2025-08-20 22:16:59.964] INFO: ACTION: NAVIGATE  url: http://10.119.32.127:8080/da/login
+[2025-08-20 22:17:06.083] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 22:17:06.084] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 22:17:07.471] INFO: STEP: Click User Profile 
+[2025-08-20 22:17:07.471] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-08-20 22:17:07.472] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-08-20 22:17:07.488] INFO: STEP: Click User Passowrd 
+[2025-08-20 22:17:07.488] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-08-20 22:17:07.488] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-08-20 22:17:08.457] INFO: STEP: Click Login 
