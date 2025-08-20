@@ -31,15 +31,8 @@ pipeline {
         stage('Archive Test Results') {
             steps {
                 // Save artifacts
-                archiveArtifacts artifacts: 'allure-results/**', fingerprint: true
                 archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
                 archiveArtifacts artifacts: 'logs/**', fingerprint: true
-            }
-        }
-
-        stage('Allure Report') {
-            steps {
-                allure includeProperties: false, jdk: '', results: [[path: "allure-results"]]
             }
         }
 
