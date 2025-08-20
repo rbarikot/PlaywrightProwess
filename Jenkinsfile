@@ -12,20 +12,46 @@ pipeline {
             }
         }
 
-        stage('Build & Run in Docker') {
+        stage('Run Playwright Tests in Docker') {
             steps {
-                bat '''
-                    docker compose --env-file %ENV_FILE% up --build --abort-on-container-exit
-                    docker compose down
-                '''
+                bat """
+                docker compose --env-file %ENV_FILE% up --build --abort-on-container-exit
+                """
+            }
+        }
+
+        stage('Archive Test Results') {
+            steps {
+                // Save artifacts
+                archiveArtifacts artifacts: 'allure-results/**', fingerprint: true
+                archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
+                archiveArtifacts artifacts: 'logs/**', fingerprint: true
             }
         }
 
         stage('Allure Report') {
             steps {
-                bat 'npx allure generate allure-results --clean -o allure-report'
-                archiveArtifacts artifacts: 'allure-report/**', allowEmptyArchive: true
+                allure includeProperties: false, jdk: '', results: [[path: "allure-results"]]
             }
+        }
+
+        stage('Publish Playwright HTML Report') {
+            steps {
+                publishHTML(target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'playwright-report',
+                    reportFiles: 'index.html',
+                    reportName: 'Playwright HTML Report'
+                ])
+            }
+        }
+    }
+
+    post {
+        always {
+            bat "docker compose down"
         }
     }
 }
