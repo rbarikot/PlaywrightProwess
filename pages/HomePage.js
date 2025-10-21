@@ -11,17 +11,17 @@ class HomePage extends BasePage {
    
   }
   async navigateToHome() {
-    const homeUrl = `${this.config.baseURL}/login`;
+    const homeUrl = process.env.BASE_URL;
     console.log(homeUrl);
     await this.navigate(homeUrl);
 
   }
   async typeUserName() {
-    await this.actionUtil.type(this.elements.username,'admin');
+    await this.actionUtil.type(this.elements.username,process.env.TEST_USERNAME);
     this.logger.step('Click User Profile');
   }
   async typePassword() {
-    await this.actionUtil.type(this.elements.username,'admin');
+    await this.actionUtil.type(this.elements.username,process.env.TEST_PASSWORD);
     this.logger.step('Click User Passowrd');
   }
   async ClickLogin() {

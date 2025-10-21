@@ -1,7 +1,7 @@
 const Logger = require('../utils/Logger');
 const WaitUtil = require('../utils/WaitUtil');
 const ActionUtil = require('../utils/ActionsUtil');
-const ConfigReader = require('../utils/ConfigReader');
+//const ConfigReader = require('../utils/ConfigReader');
 
 class BasePage {
     constructor(page) {
@@ -9,7 +9,7 @@ class BasePage {
     this.logger = Logger.getInstance();
     this.waitUtil = new WaitUtil(page);
     this.actionUtil = new ActionUtil(page);
-    this.config = ConfigReader.getAllConfigs();
+    //this.config = ConfigReader.getAllConfigs();
   }
 
   async navigate(url) {

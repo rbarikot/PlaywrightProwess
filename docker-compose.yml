@@ -3,14 +3,25 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        ENVIRONMENT: ${ENVIRONMENT:-dev}
     container_name: playwright-tests
+
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-dev}
+
     env_file:
-      - ./env/.env    # <--- point to your env/.env file
+      - ./env1/.env.${ENVIRONMENT:-dev}
+
     volumes:
       - ./:/work
       - ./test-results:/work/test-results
       - ./allure-results:/work/allure-results
       - ./allure-report:/work/allure-report
+
     working_dir: /work
     shm_size: "2gb"
-    command: ["npx", "playwright", "test"]
+
+    command: >
+      sh -c "echo 'Running in ${ENVIRONMENT:-dev} environment' &&
+             npx playwright test"

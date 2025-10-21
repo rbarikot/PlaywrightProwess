@@ -1,23 +1,28 @@
 # Use Microsoft’s official Playwright base image (includes browsers + deps)
 FROM mcr.microsoft.com/playwright:v1.46.0-jammy
 
-# Set working dir inside container
+# Set working directory
 WORKDIR /work
 
-# Copy package.json first (better caching)
+# Copy package.json first for caching
 COPY package*.json ./
 
 # Install dependencies
 RUN npm ci
 
-# Copy project files
+# Copy all source files
 COPY . .
 
-# Install Playwright browsers (Chromium, Firefox, WebKit)
+# Copy env files (optional for caching)
+COPY env1/.env.* /work/env1/
+
+# Install browsers
 RUN npx playwright install --with-deps
 
-# Default env (overridable in docker-compose or CLI)
+# Set default environment (can be overridden by docker-compose)
+ENV ENVIRONMENT=dev
 ENV HEADLESS=true
 
-# Run tests by default
-CMD ["npx", "playwright", "test"]
+# Default command — overridden by docker-compose if needed
+CMD ["sh", "-c", "echo 'ENV=${ENVIRONMENT}' && npx playwright test"]
+
