@@ -1,8 +1,12 @@
 pipeline {
     agent any
 
+    parameters {
+        choice(name: 'ENVIRONMENT', choices: ['dev', 'qa', 'staging', 'prod'], description: 'Select environment configuration')
+    }
+
     environment {
-        ENV_FILE = "env/.env"
+        ENV_FILE = "env/.env.${params.ENVIRONMENT ?: 'dev'}"
     }
 
     stages {
@@ -11,11 +15,13 @@ pipeline {
                 checkout scm
             }
         }
+
         stage('Clean old containers') {
             steps {
                 bat """
-                docker rm -f playwright-tests || true
-                docker compose --env-file %ENV_FILE% down -v || true
+                echo Cleaning old containers for environment: ${params.ENVIRONMENT}
+                docker rm -f playwright-tests || echo No container to remove
+                docker compose --env-file ${ENV_FILE} down -v || echo Nothing to stop
                 """
             }
         }
@@ -23,14 +29,14 @@ pipeline {
         stage('Run Playwright Tests in Docker') {
             steps {
                 bat """
-                docker compose --env-file %ENV_FILE% up --build --abort-on-container-exit
+                echo Running Playwright Tests with environment file: ${ENV_FILE}
+                docker compose --env-file ${ENV_FILE} up --build --abort-on-container-exit
                 """
             }
         }
 
         stage('Archive Test Results') {
             steps {
-                // Save artifacts
                 archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
                 archiveArtifacts artifacts: 'logs/**', fingerprint: true
             }
@@ -44,7 +50,7 @@ pipeline {
                     keepAll: true,
                     reportDir: 'playwright-report',
                     reportFiles: 'index.html',
-                    reportName: 'Playwright HTML Report',
+                    reportName: "Playwright HTML Report (${params.ENVIRONMENT})",
                     includes: '**/*'
                 ])
             }
@@ -53,7 +59,10 @@ pipeline {
 
     post {
         always {
-            bat "docker compose down"
+            bat """
+            echo Cleaning up containers
+            docker compose down || echo Nothing to clean
+            """
         }
     }
 }
