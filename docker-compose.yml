@@ -23,9 +23,11 @@ services:
       - ./allure-report:/work/allure-report
       - ./reports:/work/reports
 
+
     working_dir: /work
     shm_size: "2gb"
 
     command: >
-      sh -c "echo 'Running in ${ENVIRONMENT:-dev} environment' &&
+      sh -c ""mkdir -p /work/reports/${ENVIRONMENT} &&
+             chmod -R 777 /work/reports && echo 'Running in ${ENVIRONMENT:-dev} environment' &&
              npx playwright test"

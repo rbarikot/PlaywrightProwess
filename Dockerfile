@@ -13,6 +13,9 @@ RUN npm ci
 # Copy all source files
 COPY . .
 
+# Ensure writable directories exist
+RUN mkdir -p /work/playwright-report /work/reports && chmod -R 777 /work
+
 # Copy env files (optional for caching)
 COPY env1/.env.* /work/env1/
 
