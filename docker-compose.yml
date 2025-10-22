@@ -28,6 +28,6 @@ services:
     shm_size: "2gb"
 
     command: >
-      sh -c ""mkdir -p /work/reports/${ENVIRONMENT} &&
+      sh -c "mkdir -p /work/reports/${ENVIRONMENT:-dev} &&
              chmod -R 777 /work/reports && echo 'Running in ${ENVIRONMENT:-dev} environment' &&
              npx playwright test"
