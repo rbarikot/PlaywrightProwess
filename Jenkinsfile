@@ -49,7 +49,7 @@ pipeline {
                     allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
-                    reportDir: 'playwright-report',
+                    reportDir: "reports/${params.ENVIRONMENT}",
                     reportFiles: 'index.html',
                     reportName: "Playwright HTML Report (${params.ENVIRONMENT})",
                     includes: '**/*'
