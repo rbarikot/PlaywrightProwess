@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        ENV_FILE = "env/.env.${params.ENVIRONMENT ?: 'dev'}"
+        ENV_FILE = "env1/.env.${params.ENVIRONMENT ?: 'dev'}"
     }
 
     stages {
