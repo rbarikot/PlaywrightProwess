@@ -22,6 +22,7 @@ services:
       - ./allure-results:/work/allure-results
       - ./allure-report:/work/allure-report
       - ./reports:/work/reports
+      - reports-volume:/work/reports
 
 
     working_dir: /work
@@ -29,5 +30,8 @@ services:
 
     command: >
       sh -c "mkdir -p /work/reports/${ENVIRONMENT:-dev} &&
-             chmod -R 777 /work/reports && echo 'Running in ${ENVIRONMENT:-dev} environment' &&
+             chmod -R 777 /work/reports || true  && echo 'Running in ${ENVIRONMENT:-dev} environment' &&
              npx playwright test"
+
+volumes:
+  reports-volume:
