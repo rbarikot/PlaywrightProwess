@@ -21,7 +21,7 @@ pipeline {
                 bat """
                 echo Cleaning old containers for environment: ${params.ENVIRONMENT}
                 docker rm -f playwright-tests || echo No container to remove
-                docker compose --env-file ${ENV_FILE} down -v || echo Nothing to stop
+                docker-compose --env-file ${ENV_FILE} down -v || echo Nothing to stop
                 """
             }
         }
@@ -29,8 +29,9 @@ pipeline {
         stage('Run Playwright Tests in Docker') {
             steps {
                 bat """
-                echo Running Playwright Tests with environment file: ${ENV_FILE}
-                docker compose --env-file ${ENV_FILE} up --build --abort-on-container-exit
+                echo Setting environment variable for Docker Compose
+                set ENVIRONMENT=${params.ENVIRONMENT}
+                docker-compose --env-file ${ENV_FILE} up --build --abort-on-container-exit
                 """
             }
         }
@@ -61,7 +62,7 @@ pipeline {
         always {
             bat """
             echo Cleaning up containers
-            docker compose down || echo Nothing to clean
+            docker-compose down || echo Nothing to clean
             """
         }
     }
