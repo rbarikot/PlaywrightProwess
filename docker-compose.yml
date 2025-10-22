@@ -16,6 +16,7 @@ services:
     volumes:
       - ./:/work
       - /work/node_modules
+      - ./playwright-report:/work/playwright-report
       - ./test-results:/work/test-results
       - ./allure-results:/work/allure-results
       - ./allure-report:/work/allure-report
