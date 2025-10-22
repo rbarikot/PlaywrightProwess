@@ -15,6 +15,7 @@ services:
 
     volumes:
       - ./:/work
+      - /work/node_modules
       - ./test-results:/work/test-results
       - ./allure-results:/work/allure-results
       - ./allure-report:/work/allure-report
