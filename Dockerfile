@@ -18,6 +18,7 @@ COPY env1/.env.* /work/env1/
 
 # Install browsers
 RUN npx playwright install --with-deps
+RUN mkdir -p /work/playwright-report && chmod -R 777 /work/playwright-report
 
 # Set default environment (can be overridden by docker-compose)
 ENV ENVIRONMENT=dev

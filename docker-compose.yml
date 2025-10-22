@@ -1,5 +1,6 @@
 services:
   playwright-tests:
+    user: root
     build:
       context: .
       dockerfile: Dockerfile
@@ -20,6 +21,7 @@ services:
       - ./test-results:/work/test-results
       - ./allure-results:/work/allure-results
       - ./allure-report:/work/allure-report
+      - ./reports:/work/reports
 
     working_dir: /work
     shm_size: "2gb"

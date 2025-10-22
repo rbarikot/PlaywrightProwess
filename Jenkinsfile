@@ -46,7 +46,7 @@ pipeline {
         stage('Publish Playwright HTML Report') {
             steps {
                 publishHTML(target: [
-                    allowMissing: false,
+                    allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: 'playwright-report',
