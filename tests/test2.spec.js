@@ -11,7 +11,7 @@ test.describe('Login Functionality', () => {
     await homePage.navigateToHome();
   });
 
-  test('@regression Valid user login',{tag: ['@smoke','@critical','@regression']}, async ({ page }) => {
+  test('Valid user login without Perf Data',{tag: ['@smoke','@critical','@regression']}, async ({ page }) => {
      await homePage.typeUserName();
       await homePage.typePassword();
       await homePage.ClickLogin();

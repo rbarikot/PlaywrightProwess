@@ -1,13 +1,10 @@
 const BasePage = require('./BasePage');
+const homePageLocators  = require('../locators/HomePageLocator');
 
 class HomePage extends BasePage {
     constructor(page) {
     super(page);
-    this.elements = {
-      username: "//label[text()='Username']",
-      password: "//label[text()='Password']",
-      Submit: "//button[text()='Login']",
-    };
+    this.elements = homePageLocators;
    
   }
   async navigateToHome() {
