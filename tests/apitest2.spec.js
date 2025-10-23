@@ -1,22 +1,25 @@
+// tests/apitest_get.spec.js
 import { test, expect } from '@playwright/test';
-const rtheader = require('../utils_api/Returnheader');
-const endpoint = require('../utils_api/endpoint');
-const apiRequest = require('../api_request/component');
-const apiClient = require('../utils_api/apiClient');
+import Returnheader from '../utils_api/Returnheader.js';
+import AllEndpoint from '../utils_api/endpoint.js';
+import { Component } from '../api_request/component.js';
+import apiClient from '../utils_api/apiClient.js';
 
 test.describe('API EndPoint Tests', () => {
 
   test('@api GET Call for Component', async ({ request }) => {
-    const response = await new apiClient().getRequest(
+    const client = new apiClient();
+
+    const response = await client.getRequest(
       request,
-      endpoint.get_component_endpoint(),
-      { 'Authorization': rtheader.returnheader() }
+      AllEndpoint.get_component_endpoint(),
+      { Authorization: Returnheader.returnheader() }
     );
 
-    console.log("GET Endpoint:", endpoint.get_component_endpoint());
+    console.log("✅ GET Endpoint:", AllEndpoint.get_component_endpoint());
     expect(response.status()).toBe(200);
 
     const responseBody = await response.json();
-    console.log('Response Body:', responseBody);
+    console.log('🧩 Response Body:', responseBody);
   });
 });

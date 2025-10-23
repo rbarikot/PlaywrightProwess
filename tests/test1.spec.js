@@ -2,8 +2,8 @@
 import { test, expect } from '@playwright/test';
 const ConfigReader = require('../utils/ConfigReader');
 const HomePage = require('../pages/HomePage');
-const MeasuringPerf = require('../../PlaywrightProwess/perfmeasurementutils/MeasuringPerf'); // <-- match class/file name
-const { register, recordPageLoad } = require('../../PlaywrightProwess/perfmeasurementutils//metricsCollector');
+const MeasuringPerf = require('../perfmeasurementutils/MeasuringPerf'); // <-- match class/file name
+//const { register, recordPageLoad } = require('../perfmeasurementutils//metricsCollector');
 const fs = require('fs');
 
 test.describe('Login Functionality', () => {
@@ -21,7 +21,7 @@ test.describe('Login Functionality', () => {
     const perfData = await perfUtil.measureperf(page);
     console.log('📊 Performance Data:', perfData);
 
-    recordPageLoad('HomePage', 'initial', perfData.duration);
+   // recordPageLoad('HomePage', 'initial', perfData.duration);
   });
 
   test('@smoke Valid user login with performance Data', async ({ page }) => {
@@ -38,13 +38,13 @@ test.describe('Login Functionality', () => {
     const postLoginPerf = await postLoginPerfUtil.measureperf(page);
     console.log('📈 Post-login Performance:', postLoginPerf);
 
-    recordPageLoad('HomePage', 'postLogin', postLoginPerf.duration);
+    //recordPageLoad('HomePage', 'postLogin', postLoginPerf.duration);
 
     // Example assertion (adjust threshold as required)
     expect(postLoginPerf.duration).toBeLessThan(3000);
 
-    const metricsData = await register.metrics();
-    fs.writeFileSync('metrics.prom', metricsData);
-    console.log('✅ Metrics saved to metrics.prom'); 
+    //const metricsData = await register.metrics();
+    //fs.writeFileSync('metrics.prom', metricsData);
+   // console.log('✅ Metrics saved to metrics.prom'); 
   });
 });

@@ -26,6 +26,7 @@ RUN npx playwright install --with-deps
 ENV ENVIRONMENT=dev
 ENV HEADLESS=true
 
+
 # Default command — overridden by docker-compose if needed
 CMD ["sh", "-c", "echo 'ENV=${ENVIRONMENT}' && npx playwright test"]
 

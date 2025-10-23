@@ -1,21 +1,18 @@
-// @ts-check
-import { defineConfig, devices } from '@playwright/test';
-import dotenv from 'dotenv';
-import path from 'path';
+const { defineConfig, devices } = require('@playwright/test');
+const dotenv = require('dotenv');
+const path = require('path');
 
-// Determine environment (default to 'dev' if not set)
+// Determine environment
 const ENVIRONMENT = process.env.ENVIRONMENT || 'dev';
-
-// Resolve the correct .env file path
 const envFile = path.resolve(__dirname, `env1/.env.${ENVIRONMENT}`);
 dotenv.config({ path: envFile });
 
-// Debug log to confirm
+// Debug
 console.log(`✅ Loaded environment: ${ENVIRONMENT}`);
 console.log(`🌐 Env file: ${envFile}`);
 console.log(`🔑 BASE_URL: ${process.env.BASE_URL}`);
 
-export default defineConfig({
+module.exports = defineConfig({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -24,7 +21,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['allure-playwright'],
-    ['html', { outputFolder: `reports/${ENVIRONMENT}` }], // env-specific reports
+    ['html', { outputFolder: `reports/${ENVIRONMENT}` }],
   ],
   use: {
     baseURL: process.env.BASE_URL,

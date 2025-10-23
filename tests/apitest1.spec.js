@@ -1,14 +1,22 @@
 import { test, expect } from '@playwright/test';
-const rtheader=require('../utils_api/Returnheader');
-const endpoint=require('../utils_api/endpoint');
-const apiRequest=require('../api_request/component');
-const apiClient=require('../utils_api/apiClient');
+import { Component } from '../api_request/component.js';
+import apiClient from '../utils_api/apiClient.js';
+import AllEndpoint from '../utils_api/endpoint.js';
+import Returnheader from '../utils_api/Returnheader.js';
 
-test.describe('API EndPoint Tests', () =>{
-  test('@api Put Call for Componnt', async({request}) => {
-    const response = await new apiClient().putRequest(request, endpoint.put_component_endpoint(), {'Authorization': rtheader.returnheader()}, apiRequest.put_component_request());
+test.describe('API EndPoint Tests', () => {
+  test('@api Put Call for Component', async ({ request }) => {
+    const payload = Component.put_component_request();
+    const client = new apiClient();
+
+    const response = await client.putRequest(
+      request,
+      AllEndpoint.put_component_endpoint(),
+      { Authorization: Returnheader.returnheader() },
+      payload
+    );
+
     expect(response.status()).toBe(200);
-    const responseBody = await response.json();
-    console.log(responseBody);
+    console.log(await response.json());
   });
 });
