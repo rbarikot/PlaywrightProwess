@@ -42,16 +42,23 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      # 👇 Install Docker Compose v2 plugin (this is the key fix)
+      - name: Install Docker Compose Plugin
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose-plugin
+          docker compose version
+
       - name: Clean up Old Containers (if any)
         run: |
           echo "Cleaning old containers for environment: $ENVIRONMENT"
           docker rm -f playwright-tests || echo "No container to remove"
-          docker-compose --env-file $ENV_FILE down -v || echo "Nothing to stop"
+          docker compose --env-file $ENV_FILE down -v || echo "Nothing to stop"
 
       - name: Run Playwright Tests in Docker
         run: |
           echo "Running tests for environment: $ENVIRONMENT"
-          docker-compose --env-file $ENV_FILE up --build --abort-on-container-exit
+          docker compose --env-file $ENV_FILE up --build --abort-on-container-exit
 
       - name: Copy Playwright Report (from container)
         if: always()
@@ -71,4 +78,4 @@ jobs:
         if: always()
         run: |
           echo "Cleaning up containers..."
-          docker-compose --env-file $ENV_FILE down -v || echo "Nothing to clean"
+          docker compose --env-file $ENV_FILE down -v || echo "Nothing to clean"
