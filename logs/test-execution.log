@@ -1099,3 +1099,123 @@ Call log:
 [2025-10-23 10:01:46.736] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
 [2025-10-23 10:01:47.568] INFO: STEP: Click Login 
 [2025-10-23 10:01:48.184] INFO: STEP: Click Login 
+[2025-10-24 10:34:16.103] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 10:34:17.049] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 10:34:20.886] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:20.887] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:22.024] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 10:34:22.277] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:22.278] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:22.292] INFO: STEP: Click User Profile 
+[2025-10-24 10:34:22.293] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:22.294] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:22.335] INFO: STEP: Click User Passowrd 
+[2025-10-24 10:34:22.335] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 10:34:22.336] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:22.444] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 10:34:23.356] INFO: STEP: Click Login 
+[2025-10-24 10:34:23.671] INFO: STEP: Click User Profile 
+[2025-10-24 10:34:23.671] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:23.672] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:23.707] INFO: STEP: Click User Passowrd 
+[2025-10-24 10:34:23.707] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 10:34:23.708] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:24.751] INFO: STEP: Click Login 
+[2025-10-24 10:34:26.413] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:26.414] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:26.585] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:26.585] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:27.848] INFO: STEP: Click User Profile 
+[2025-10-24 10:34:27.848] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:27.849] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:27.891] INFO: STEP: Click User Passowrd 
+[2025-10-24 10:34:27.892] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 10:34:27.892] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:28.007] INFO: STEP: Click User Profile 
+[2025-10-24 10:34:28.007] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:28.008] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:28.045] INFO: STEP: Click User Passowrd 
+[2025-10-24 10:34:28.046] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 10:34:28.046] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:28.266] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 10:34:28.472] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 10:34:28.987] INFO: STEP: Click Login 
+[2025-10-24 10:34:29.142] INFO: STEP: Click Login 
+[2025-10-24 10:34:33.001] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:33.002] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:33.245] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:33.247] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:35.138] INFO: STEP: Click User Profile 
+[2025-10-24 10:34:35.139] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:35.139] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:35.191] INFO: STEP: Click User Passowrd 
+[2025-10-24 10:34:35.193] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 10:34:35.193] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:36.880] INFO: STEP: Click Login 
+[2025-10-24 10:34:37.423] INFO: STEP: Click User Profile 
+[2025-10-24 10:34:37.424] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 10:34:37.424] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:37.468] INFO: STEP: Click User Passowrd 
+[2025-10-24 10:34:37.475] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 10:34:37.475] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 10:34:38.840] INFO: STEP: Click Login 
+[2025-10-24 12:26:58.403] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 12:26:59.088] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 12:27:02.750] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:02.751] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:03.444] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:03.445] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:04.130] INFO: STEP: Click User Profile 
+[2025-10-24 12:27:04.131] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:04.131] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:04.167] INFO: STEP: Click User Passowrd 
+[2025-10-24 12:27:04.168] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 12:27:04.168] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:04.148] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 12:27:04.590] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 12:27:04.841] INFO: STEP: Click User Profile 
+[2025-10-24 12:27:04.841] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:04.842] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:04.876] INFO: STEP: Click User Passowrd 
+[2025-10-24 12:27:04.877] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 12:27:04.877] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:05.206] INFO: STEP: Click Login 
+[2025-10-24 12:27:05.910] INFO: STEP: Click Login 
+[2025-10-24 12:27:08.718] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:08.719] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:08.790] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:08.790] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:10.322] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 12:27:10.323] INFO: ACTION: NAVIGATE  url: http://10.119.32.132:8084/da
+[2025-10-24 12:27:11.154] INFO: STEP: Click User Profile 
+[2025-10-24 12:27:11.155] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:11.155] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:11.210] INFO: STEP: Click User Passowrd 
+[2025-10-24 12:27:11.210] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 12:27:11.211] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:11.228] INFO: STEP: Click User Profile 
+[2025-10-24 12:27:11.228] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:11.228] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:11.284] INFO: STEP: Click User Passowrd 
+[2025-10-24 12:27:11.285] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 12:27:11.285] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:12.324] INFO: STEP: Click Login 
+[2025-10-24 12:27:12.409] INFO: STEP: Click Login 
+[2025-10-24 12:27:14.384] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:14.385] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:14.957] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:14.958] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:16.280] INFO: STEP: Click User Profile 
+[2025-10-24 12:27:16.280] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:16.280] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:16.316] INFO: STEP: Click User Passowrd 
+[2025-10-24 12:27:16.317] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 12:27:16.318] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:16.863] INFO: STEP: Click User Profile 
+[2025-10-24 12:27:16.863] INFO: ACTION: TYPE //label[text()='Username'] text: "admin", timeout: 30000ms
+[2025-10-24 12:27:16.864] INFO: ACTION: WAIT_FOR_ELEMENT //label[text()='Username'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:16.921] INFO: STEP: Click User Passowrd 
+[2025-10-24 12:27:16.922] INFO: ACTION: CLICK //button[text()='Login'] timeout: 30000ms
+[2025-10-24 12:27:16.922] INFO: ACTION: WAIT_FOR_ELEMENT //button[text()='Login'] state: visible, timeout: 30000ms
+[2025-10-24 12:27:18.080] INFO: STEP: Click Login 
+[2025-10-24 12:27:18.308] INFO: STEP: Click Login 
